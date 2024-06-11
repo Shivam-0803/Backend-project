@@ -17,9 +17,9 @@ connectDB()
 .then(()=>{
     app.on("error" ,(error)=>{
         console.log("ERRR" ,error);
-        throw error;
+        throw err;
     })
-    app.listen(process.env.PORT || 8001 , ()=>{
+    app.listen(process.env.PORT || 8002 , ()=>{
         console.log(` server is running at port ; ${process.env.PORT}`)
     })
 })
